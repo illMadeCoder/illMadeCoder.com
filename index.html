@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html class="main">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- GENERAL SEARCH INFO -->
+    <meta name="author" content="Jesse Bergerstock"/>
+    <meta name="copyright" content="Jesse Bergerstock"/>
+    <meta name="description" content="A Resume Site">
+    <meta name="keywords" content="Resume Portfolio">
+    <link rel="canonical" href="https://illmadecoder.com" />
+
+    <!-- FACEBOOK CARD (I GUESS? I DON'T USE FACEBOOK, SO IF THIS IS BROKEN I WON'T KNOW) -->
+    <meta property="og:title" content="Jesse's Bergerstock Resume"/>
+    <meta property="og:site_name" content="Jesse's Bergerstock Resume"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://illmadecoder.com"/>
+    <meta property="og:image" content="https://illmadecoder.com/images/armor.png"/>
+
+
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@illmadecoder"/>
+    <meta name="twitter:creator" content="Jesse Bergerstock"/>
+    <meta name="twitter:url" content="https://illmadecoder.com/"/>
+    <meta name="twitter:title" content="Jesse Bergerstock's Resume"/>
+    <meta name="twitter:description" content="A resume website."/>
+    <meta name="twitter:image" content="https://illmadecoder.com/images/armor.png"/>
+
+
+    <link rel="icon" href="/images/armor.png">
+    <link href="https://fonts.googleapis.com/css?family=Sura" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/react@15/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+    <script type="text/babel" src="/scripts/app.js"></script>
+    <div class="quotes">
+      <p>&ldquo;The bravest people are the ones who don&rsquo;t mind looking like cowards.&rdquo;<br />
+ &#8211; T.H. White</p>
+      <p>&ldquo;Everything not forbidden is compulsory&rdquo;<br />
+ &#8211; T.H. White</p>
+      <p>&ldquo;Only fools want to be great.&rdquo; <br />
+ &#8211; T.H. White</p>
+      <p>&ldquo;Might does not make right! Right makes right!&rdquo;<br />
+ &#8211; T.H. White</p>
+      <p>&ldquo;They made me see that the world was beautiful if you were beautiful, and that you couldn't get unless you gave. And you had to give without wanting to get.&rdquo;<br />
+ &#8211; T.H. White</p>
+      <p>&ldquo;Those who lived by the sword were forced to die by it.&rdquo;<br />
+ &#8211; T.H. White</p>
+      <p>&ldquo;A lot of brainless unicorns swaggering about and calling themselves educated just because they can push each other off a horse with a bit of a stick! It makes me tired. &rdquo;<br />
+ &#8211; T.H. White</p>
+      <p>&ldquo;He felt in his heart cruelty and cowardice, the things which made him brave and kind.&rdquo;<br />
+ &#8211; T.H. White</p>
+      <p>&ldquo;...All endeavours which are directed to a purely worldly end...contain within themselves the germs of their own corruption.&rdquo;<br />
+ &#8211; T.H. White</p>
+      <p>&ldquo;Long ago, when I had my Merlyn to help, he tried to teach me to think. He knew he would have to leave in the end, so he forced me to think for myself. Don't ever let anybody teach you to think, Lance: it is the curse of the world.&rdquo;<br />
+ &#8211; T.H. White</p>
+      <p>&ldquo;Cavall came simply and gave his heart and soul.&rdquo;<br />
+ &#8211; T.H. White</p>
+      <p>&ldquo;a king can only work with his best tools.&rdquo;<br />
+ &#8211; T.H. White</p>
+      <p>&ldquo;He was neither clever nor sensitive, but he was loyal--stubbornly sometimes, and even annoyingly and stupidly so in later life.&rdquo;<br />
+ &#8211; T.H. White</p>
+      <p>&ldquo;Their mother is Athene, the goddess of wisdom, and, although they are often ready to play the buffoon to amuse you, such conduct is the prerogative of the truly wise.&rdquo;<br />
+ &#8211; T.H. White</p>
+      <p>&ldquo;but it seems, in tragedy, that innocence is not enough.&rdquo;<br />
+ &#8211; T.H. White</p>
+      <p>&ldquo;So Merlyn sent you to me," said the badger, "to finish your education. Well, I can only teach you two things -- to dig, and love your home. These are the true end of philosophy.&rdquo;<br />
+ &#8211; T.H. White</p>
+      <p>&ldquo;It was called a tribute before a battle and a ransom afterwards.&rdquo;<br />
+ &#8211; T.H. White</p>
+      <p>&ldquo;The poor fellow had never been cut out to be a villain.&rdquo;<br />
+ &#8211; T.H. White</p>
+      <p>&ldquo;Nobody can be too careful about their habits of speech.&rdquo;<br />
+ &#8211; T.H. White</p>
+      <p>&ldquo;They made me see that the world was beautiful if you were beautiful, and that you couldn&rsquo;t get unless you gave. And you had to give without wanting to get.&rdquo;<br />
+ &#8211; T.H. White</p>
+      <p>&ldquo;The best cure for grief is learning".&rdquo;<br />
+ &#8211; T.H. White</p>
+      <p>&ldquo;She had made the bravest protest: I will not be vanquished.&rdquo;<br />
+ &#8211; T.H. White</p>
+      <p>&ldquo;So little time to pass?&rdquo; said Merlyn, and a big tear ran down to the end of his nose.&rdquo;<br />
+ &#8211; T.H. White</p>
+      <p>&ldquo;The only way to make sense out of change is to plunge into it, move with it, and join the dance.&rdquo;<br />
+ &#8211; Alan W. Watts</p>
+      <p>&ldquo;You and I are all as much continuous with the physical universe as a wave is continuous with the ocean.&rdquo;<br />
+ &#8211; Alan W. Watts</p>
+      <p>&ldquo;People become concerned with being more humble than other people.&rdquo;<br />
+ &#8211; Alan W. Watts</p>
+      <p>&ldquo;We do not "come into" this world; we come out of it, as leaves from a tree.&rdquo;<br />
+ &#8211; Alan W. Watts</p>
+      <p>&ldquo;Our pleasures are not material pleasures, but symbols of pleasure &ndash; attractively packaged but inferior in content.&rdquo;<br />
+ &#8211; Alan W. Watts</p>
+      <p>&ldquo;In looking out upon the world, we forget that the world is looking at itself.&rdquo;<br />
+ &#8211; Alan W. Watts</p>
+      <p>&ldquo;The religious idea of God cannot do full duty for the metaphysical infinity.&rdquo;<br />
+ &#8211; Alan W. Watts</p>
+      <p>&ldquo;It is hard indeed to notice anything for which the languages available to us have no description.&rdquo;<br />
+ &#8211; Alan W. Watts</p>
+      <p>&ldquo;It&rsquo;s better to have a short life that is full of what you like doing, than a long life spent in a miserable way.&rdquo;<br />
+ &#8211; Alan W. Watts</p>
+      <p>&ldquo;Society is our extended mind and body.&rdquo;<br />
+ &#8211; Alan W. Watts</p>
+      <p>&ldquo;Have you ever noticed that anybody driving slower than you is an idiot, and anyone going faster than you is a maniac?&rdquo;<br />
+ &#8211; George Carlin</p>
+      <p>&ldquo;There are nights when the wolves are silent and only the moon howls. &rdquo;<br />
+ &#8211; George Carlin</p>
+      <p>&ldquo;May the forces of evil become confused on the way to your house.&rdquo;<br />
+ &#8211; George Carlin</p>
+      <p>&ldquo;If you try to fail, and succeed, which have you done?&rdquo;<br />
+ &#8211; George Carlin</p>
+      <p>&ldquo;Laugh often, long and loud. Laugh until you gasp for breath.&rdquo;<br />
+ &#8211; George Carlin</p>
+      <p>&ldquo;People who see life as anything more than pure entertainment are missing the point.&rdquo;<br />
+ &#8211; George Carlin</p>
+      <p>&ldquo;Some people have no idea what they're doing, and a lot of them are really good at it.&rdquo;<br />
+ &#8211; George Carlin</p>
+      <p>&ldquo;That which can be asserted without evidence, can be dismissed without evidence.&rdquo;<br />
+ &#8211; Christopher Hitchens</p>
+      <p>&ldquo;The essence of the independent mind lies not in what it thinks, but in how it thinks.&rdquo;<br />
+ &#8211; Christopher Hitchens</p>
+      <p>&ldquo;What do you most value in your friends? <br />Their continued existence.&rdquo;<br />
+ &#8211; Christopher Hitchens</p>
+      <p>&ldquo;Take the risk of thinking for yourself, much more happiness, truth, beauty, and wisdom will come to you that way ..&rdquo;<br />
+ &#8211; Christopher Hitchens</p>
+      <p>&ldquo;You are not controlling the storm, and you are not lost in it. You are the storm.&rdquo;<br />
+ &#8211; Sam Harris</p>
+      <p>&ldquo;The core of science is not a mathematical modeling -- it is intellectual honesty. It is a willingness to have our certainties about the world constrained by good evidence and good argument.&rdquo;<br />
+ &#8211; Sam Harris</p>
+      <p>&ldquo;To agree to keep a secret is to assume a burden&rdquo;<br />
+ &#8211; Sam Harris</p>
+      <p>&ldquo;We are all connected; To each other, biologically. To the earth, chemically. To the rest of the universe atomically.&rdquo;<br />
+ &#8211; Neil deGrasse Tyson</p>
+      <p>&ldquo;My view is that if your philosophy is not unsettled daily then you are blind to all the universe has to offer.&rdquo;<br />
+ &#8211; Neil deGrasse Tyson</p>
+      <p>&ldquo;The Universe is under no obligation to make sense to you.&rdquo;<br />
+ &#8211; Neil deGrasse Tyson</p>
+      <p>&ldquo;Knowing how to think empowers you far beyond those who know only what to think.&rdquo;<br />
+ &#8211; Neil deGrasse Tyson</p>
+      <p>&ldquo;After all, what nobler thought can one cherish than that the universe lives within us all?&rdquo;<br />
+ &#8211; Neil deGrasse Tyson</p>
+      <p>&ldquo;Where ignorance lurks, so too do the frontiers of discovery and imagination&rdquo;<br />
+ &#8211; Neil deGrasse Tyson</p>
+      <p>&ldquo;Ignorance is a virus. Once it starts spreading, it can only be cured by reason. For the sake of humanity, we must be that cure.&rdquo;<br />
+ &#8211; Neil deGrasse Tyson</p>
+      <p>&ldquo;I love the smell of the universe in the morning.&rdquo;<br />
+ &#8211; Neil deGrasse Tyson</p>
+      <p>&ldquo;If you need to invoke your academic pedigree or job title for people to believe what you say, then you need a better argument.&rdquo;<br />
+ &#8211; Neil deGrasse Tyson</p>
+      <p>&ldquo;Some of the greatest poetry is revealing to the reader the beauty in something that was so simple you had taken it for granted.&rdquo;<br />
+ &#8211; Neil deGrasse Tyson</p>
+      <p>&ldquo;In modern times, if the sole measure of what&rsquo;s out there flows from your five senses then a precarious life awaits you.&rdquo;<br />
+ &#8211; Neil deGrasse Tyson</p>
+      <p>&ldquo;Somewhere, something incredible is waiting to be known.&rdquo;<br />
+ &#8211; Carl Sagan</p>
+      <p>&ldquo;Every one of us is, in the cosmic perspective, precious. If a human disagrees with you, let him live. In a hundred billion galaxies, you will not find another.&rdquo;<br />
+ &#8211; Carl Sagan</p>
+      <p>&ldquo;If you wish to make an apple pie from scratch, you must first invent the universe.&rdquo;<br />
+ &#8211; Carl Sagan</p>
+      <p>&ldquo;One glance at a book and you hear the voice of another person, perhaps someone dead for 1,000 years. To read is to voyage through time.&rdquo;<br />
+ &#8211; Carl Sagan</p>
+      <p>&ldquo;For me, it is far better to grasp the Universe as it really is than to persist in delusion, however satisfying and reassuring.&rdquo;<br />
+ &#8211; Carl Sagan</p>
+      <p>&ldquo;Extraordinary claims require extraordinary evidence.&rdquo;<br />
+ &#8211; Carl Sagan</p>
+      <p>&ldquo;Imagination will often carry us to worlds that never were, but without it we go nowhere.&rdquo;<br />
+ &#8211; Carl Sagan</p>
+      <p>&ldquo;We are like butterflies who flutter for a day and think it is forever.&rdquo;<br />
+ &#8211; Carl Sagan</p>
+      <p>&ldquo;Books permit us to voyage through time, to tap the wisdom of our ancestors.&rdquo;<br />
+ &#8211; Carl Sagan</p>
+      <p>&ldquo;The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself.&rdquo;<br />
+ &#8211; Carl Sagan</p>
+      <p>&ldquo;The universe seems neither benign nor hostile, merely indifferent.&rdquo;<br />
+ &#8211; Carl Sagan</p>
+      <p>&ldquo;Science is a way of thinking much more than it is a body of knowledge.&rdquo;<br />
+ &#8211; Carl Sagan</p>
+      <p>&ldquo;The cure for a fallacious argument is a better argument, not the suppression of ideas.&rdquo;<br />
+ &#8211; Carl Sagan</p>
+      <p>&ldquo;If it can be destroyed by the truth, it deserves to be destroyed by the truth.&rdquo;<br />
+ &#8211; Carl Sagan</p>
+      <p>&ldquo;But I could be wrong.&rdquo;<br />
+ &#8211; Carl Sagan</p>
+      <p>&ldquo;Who are we? We find that we live on an insignificant planet of a humdrum star lost in a galaxy tucked away in some forgotten corner of a universe in which there are far more galaxies than people.&rdquo;<br />
+ &#8211; Carl Sagan</p>
+      <p>&ldquo;If you ever start taking things too seriously, just remember that we are talking monkeys on an organic spaceship flying through the universe.&rdquo;<br />
+ &#8211; Joe Rogan</p>
+      <p>&ldquo;After this whole acting thing is over and done, you eventually have to be human. Some people are never human. It's very weird.&rdquo;<br />
+ &#8211; Joe Rogan</p>
+      <p>&ldquo;The key to pursuing excellence is to embrace an organic, long-term learning process, and not to live in a shell of static, safe mediocrity. Usually, growth comes at the expense of previous comfort or safety.&rdquo;<br />
+ &#8211; Josh Waitzkin</p>
+      <p>&ldquo;Growth comes at the point of resistance. We learn by pushing ourselves and finding what really lies at the outer reaches of our abilities.&rdquo;<br />
+ &#8211; Josh Waitzkin</p>
+      <p>&ldquo;One idea I taught was the importance of regaining presence and clarity of mind after making a serious error.&rdquo;<br />
+ &#8211; Josh Waitzkin</p>
+      <p>&ldquo;In chess you might find a good move. Then you might find a better move. But take your time. Find the best move.&rdquo;<br />
+ &#8211; Josh Waitzkin</p>
+      <p>&ldquo;I found myself calculating less and feeling more,&rdquo;<br />
+ &#8211; Josh Waitzkin</p>
+      <p>&ldquo;I was unhindered by internal conflict&mdash;a state of being that I have come to see as fundamental to the learning process.&rdquo;<br />
+ &#8211; Josh Waitzkin</p>
+      <p>&ldquo;Musicians, actors, athletes, philosophers, scientists, writers understand that brilliant creations are often born of small errors.&rdquo;<br />
+ &#8211; Josh Waitzkin</p>
+      <p>&ldquo;To walk a thorny road, we may cover its every inch with leather or we can make sandals. Anger.&rdquo;<br />
+ &#8211; Josh Waitzkin</p>
+      <p>&ldquo;It is rarely a mysterious technique that drives us to the top, but rather a profound mastery of what may well be a basic skill set.&rdquo;<br />
+ &#8211; Josh Waitzkin</p>
+      <p>&ldquo;When uncomfortable, my instinct is not to avoid the discomfort but to become at peace with it.&rdquo;<br />
+ &#8211; Josh Waitzkin</p>
+      <p>&ldquo;The real art in learning takes place as we move beyond proficiency, when our work becomes an expression of our essence.&rdquo;<br />
+ &#8211; Josh Waitzkin</p>
+      <p>&ldquo;In every discipline, the ability to be clearheaded, present, cool under fire is much of what separates the best from the mediocre.&rdquo;<br />
+ &#8211; Josh Waitzkin</p>
+      <p>&ldquo;Of course there were plateaus, periods when my results leveled off while I internalized the information necessary for my next growth spurt,&rdquo;<br />
+ &#8211; Josh Waitzkin</p>
+      <p>&ldquo;An artist is someone<br />who takes you where you could never go alone.&rdquo;<br />
+ &#8211; Jesse Schell</p>
+      <p>&ldquo;The road from legitimate suspicion to rampant paranoia is very much shorter than we think.&rdquo;<br />
+ &#8211; Jean-luc Picard</p>
+      <p>&ldquo;No being is so important that he can usurp the rights of another.&rdquo;<br />
+ &#8211; Jean-luc Picard</p>
+      <p>&ldquo;Villains who twirl their moustaches are easy to spot. Those who clothe themselves in good deeds are well-camouflaged.&rdquo;<br />
+ &#8211; Jean-luc Picard</p>
+    </div>
+  <body>
+    <h1 style="color:white">WEBSITE UNDER RECONSTRUCTION TO FIT REACT, PLEASE COME AGAIN SOON!</h1>
+    <div id="root">
+    </div>
+    <!--
+    <div class="headers">
+      <div id="web" class="header">web</div>
+      <div id="self" class="header">self</div>
+      <div id="work" class="header">work</div>
+    </div>
+    <div id="web-field">
+      <p class="fieldtitle">Web</p>
+      <p class="fieldquote"></p>
+      <div class="row" id="row-image-illmadecoder">
+        <p class="row-text">illMadeCoder.com</p>
+      </div>
+    </div>
+    <div id="self-field">
+      <p class="fieldtitle">Self</p>
+      <p class="fieldquote"></p>
+      <p><span style="font-weight: 400;">Welcome Friend - to my sincere but abstract abode! Here lies the product of my labor, from my public web work, to my inner mind in regards to the art of code and games and self.</span></p>
+      <p><span style="font-weight: 400;">For what reason do you honor me with such a visit? Perhaps you&rsquo;re an employer evaluating my records to see if I fit the bill, if so, a resume can be found here -- <a href="https://docs.google.com/document/d/1jaCLcXY3yasWrpdZChLeg0nNL5q6EyE421fZdmRwugs/edit?usp=sharing">resume</a>, or perhaps a guest who has come across my works and would like to see more. Either way, you&rsquo;re what makes this all matter, and I hope you find something of interest in your exploration of my domain.</span></p>
+      <p><span style="font-weight: 400;">A bit about me.</span></p>
+      <p><span style="font-weight: 400;">My given name is Jesse Bergerstock, and in the virtual worlds I go by illMadeCoder (Ill Made Coder). For like the Ill-Made Knight of Arthurian Legend, I value high expectations, but to never forget my humbling nature as man. In this way, my journey is of self growth and sincerity, I see no meaning in a life as a shadow of oneself; I find this role to be my greatest strength and greatest weakness. I live for the discovery and interaction with truths.</span></p>
+      <p><span style="font-weight: 400;">But let&rsquo;s back up, so what do I do?</span></p>
+      <p><span style="font-weight: 400;">First I learn and model, second I create, third I appreciate. That doesn&rsquo;t say all that much, but that&rsquo;s what I do. Usually this takes form in the the study of self, maths, music, competition, astronomy, games, automation (programming), and ... well you get the point. But if you&rsquo;re here, you&rsquo;re likely here for my programmatic works, so then may I lean your vision towards the top left to see my web work, or perhaps below where some of my ideas on games or coding can be found, or finally, the top right to see everything else. If you find anything interesting, I&rsquo;d love to know; you can always send me an email at </span><a href="mailto:illMadeCoder@gmail.com"><span style="font-weight: 400;">illMadeCoder@gmail.com</span></a><span style="font-weight: 400;"> !</span></p>
+      <p><span style="font-weight: 400;">There&rsquo;s so much more to say, but I must limit myself somewhere, so instead you&rsquo;ll have to discovery the rest through my work, or you can always drop me a message, but be warned - I&rsquo;ll never shutup once you do.</span></p>
+      <p><span style="font-weight: 400;">Please, enjoy your stay friend.</span></p>
+      <div id="articles">
+        <span style="font-size:32px;">A Suspicious Lot of Ideas</span>
+        <span style="font-size:16px;">(Essays and Blurbs)</span>
+        <ul style="list-style-type:none">
+          <li>
+            General Programming
+            <ul>
+              <li>
+                <a class="article-link" href=""> Programming Paradigms 101 (WIP) </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            Web Development
+            <ul>
+            </ul>
+          </li>
+          <li>
+            Game Design
+            <ul>
+              <li>
+                <a class="article-link" href=""> Mechanics, Polish, and Metaphor - A Theory of Games (WIP) </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="work-field">
+      <p class="fieldtitle">Work</p>
+      <p class="fieldquote"></p>
+      <div class="row">
+        <div class="row-text">Project Title</div>
+      </div>
+    </div>
+    -->
+  </body>
+</html>

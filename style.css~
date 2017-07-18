@@ -52,7 +52,6 @@ body {
 .header {
   position: relative;
   margin: auto;
-  display: none;
   background-repeat: no-repeat;
   background-position: top center;
   width:25vw;
@@ -64,6 +63,7 @@ body {
   border-bottom: 10px solid white;
   border-radius: 1vw;
   line-height: 56vh;
+  display: inline-block;
 }
 .header:hover {
   background-color: #6D6D6D;
@@ -153,4 +153,8 @@ body {
   text-align: center;
   margin-bottom: 5%;
   margin-top: 0;
+}
+.rich-text-block {
+  color: white;
+  font-weight: 400;
 }

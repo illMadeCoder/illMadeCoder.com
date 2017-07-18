@@ -1,19 +1,8 @@
 const data = {
-  quotes : 
-  [
-    '"The bravest people are the ones who don\'t mind looking like cowards - T.H. White"',
-    '"Everything not forbidden is compulsory - T.H. White"', 
-    '"You and I are all as much continuous with the physical universe as a wave is continuous with the ocean. - Alan W. Watts"', 
-    '"Laugh often, long and loud. Laugh until you gasp for breath. - George Carlin"', 
-    '"My view is that if your philosophy is not unsettled daily then you are blind to all the universe has to offer. - Neil deGrasse Tyson"',
-    '"Every one of us is, in the cosmic perspective, precious. If a human disagrees with you, let him live. In a hundred billion galaxies, you will not find another. - Carl Sagan"',
-    '"If you wish to make an apple pie from scratch, you must first invent the universe. - Carl Sagan"'
-
-  ],
-  title : "A Curious Domain",
-  subtitle : "Jesse Bergerstock",
-  fields : [],
-  articles : []
+  quotes : ['"The bravest people are the ones who don\'t mind looking like cowards - T.H. White"','"Everything not forbidden is compulsory - T.H. White"', '"You and I are all as much continuous with the physical universe as a wave is continuous with the ocean. - Alan W. Watts"', '"Laugh often, long and loud. Laugh until you gasp for breath. - George Carlin"', '"My view is that if your philosophy is not unsettled daily then you are blind to all the universe has to offer. - Neil deGrasse Tyson"'],
+  titleText : "A Curious Domain",
+  subtitleText : "Jesse Bergerstock",
+  fields : []
 }
 function create_field_prop(title,content) {
   return ({title:title,content:content})
@@ -21,13 +10,12 @@ function create_field_prop(title,content) {
 
 
 //Component -- Body
-//Expects a props.title as a string, props.subtitle as a string, props.quotes as an array of strings, props.fields as an array of field objects
+//Expects a props.title as a string, props.subtitle as a string, props.quotes as an array of strings, and props.fields as an array of field objects.
 const Body = (props) => {
   let titleText = props.title
   let subtitleText = props.subtitle
   let fields = []
   let quotes = props.quotes
-  
   fields.push(create_field_prop(
     "Web",
     (
@@ -39,33 +27,23 @@ const Body = (props) => {
   fields.push(create_field_prop(
     "Self",
     (
-      <div>
-        <h2 style={{textAlign:"center"}}> A Bit On Myself </h2>
-        <RichTextBlock> Welcome Friend - to my sincere but abstract abode! <br /><br />
-        
-        Here lies the product of my labor, from my public web work and projects, to my inner mind in regards to the art of code and games and self.
+      <RichTextBlock> Welcome Friend - to my sincere but abstract abode! <br /><br />
+      
+      Here lies the product of my labor, from my public web work and projects, to my inner mind in regards to the art of code and games and self.
 
-    For what reason do you honor me with such a visit? Perhaps you’re an employer evaluating my records to see if I fit the bill, if so, a resume can be found here -- resume, or perhaps a guest who has come across my works and would like to see more. Either way, you’re what makes this all matter, and I hope you find something of interest in your exploration of my domain. 
+  For what reason do you honor me with such a visit? Perhaps you’re an employer evaluating my records to see if I fit the bill, if so, a resume can be found here -- resume, or perhaps a guest who has come across my works and would like to see more. Either way, you’re what makes this all matter, and I hope you find something of interest in your exploration of my domain. 
 
-    A bit about me.
+  A bit about me.
 
-    My name is Jesse Bergerstock, and in the virtual worlds I go by illMadeCoder (Ill Made Coder). For like the Ill-Made Knight of Arthurian Legend, I value high expectations, but to never forget my humbling nature as man. In this way, my journey is of self growth and sincerity, I see no meaning in a life as a shadow of oneself; I find this role to be my greatest strength and greatest weakness. I live for the discovery and interaction with truths.
+  My name is Jesse Bergerstock, and in the virtual worlds I go by illMadeCoder (Ill Made Coder). For like the Ill-Made Knight of Arthurian Legend, I value high expectations, but to never forget my humbling nature as man. In this way, my journey is of self growth and sincerity, I see no meaning in a life as a shadow of oneself; I find this role to be my greatest strength and greatest weakness. I live for the discovery and interaction with truths.
 
-    <br /> <br /> But let’s back up, so what do I do?
+  <br /> <br /> But let’s back up, so what do I do?
 
-    First I learn and model, second I create, third I appreciate. That doesn’t say all that much, but that’s what I do. Usually this takes form in the the study of self, maths, music, competition, astronomy, games, automation (programming), and ... well you get the point. But if you’re here, you’re likely here for my programmatic works, so then may I lean your vision towards the top left to see my web work, or perhaps below where some of my ideas on games or coding can be found, or finally, the top right to see everything else. If you find anything interesting, I’d love to know; you can always send me an email at illMadeCoder@gmail.com !
+  First I learn and model, second I create, third I appreciate. That doesn’t say all that much, but that’s what I do. Usually this takes form in the the study of self, maths, music, competition, astronomy, games, automation (programming), and ... well you get the point. But if you’re here, you’re likely here for my programmatic works, so then may I lean your vision towards the top left to see my web work, or perhaps below where some of my ideas on games or coding can be found, or finally, the top right to see everything else. If you find anything interesting, I’d love to know; you can always send me an email at illMadeCoder@gmail.com !
 
-    There’s so much more to say, but I must limit myself somewhere, so instead you’ll have to discovery the rest through my work, or you can always drop me a message, but be warned - I’ll never shutup once you do.
+  There’s so much more to say, but I must limit myself somewhere, so instead you’ll have to discovery the rest through my work, or you can always drop me a message, but be warned - I’ll never shutup once you do.
 
-    <br /> <br /> Please, enjoy your visit. </RichTextBlock>
-    
-      <ArticleList articles={[
-        {hyperlink:"https://docs.google.com/document/d/1R08WKjbiuwCTc6XB6M21Fo1QO2VWbBEQZOmht5KnZ7E/edit?usp=sharing", title:"Pre and Post Conditions - Keywords of the Trade"},
-        {hyperlink:"https://docs.google.com/document/d/1Wg_xiU6fYmG55pzNy757uKc7Z71w3eV7O8hmjso89Ok/edit?usp=sharing", title:"Semantics vs Syntax - Keywords of the Trade"},
-        {hyperlink:"https://docs.google.com/document/d/1KbxUFzkLsESpKyZIr53KY6_rqPV4-4ySYsn7z8bQZT4/edit?usp=sharing", title:"Program Cohesion - Keywords of the Trade"}
-
-      ]} />
-    </div>
+  <br /> <br /> Please, enjoy your stay. </RichTextBlock>
     )
   ))
   fields.push(create_field_prop("Work",
@@ -87,7 +65,6 @@ const Body = (props) => {
 //Component -- TitleBlock
 //Expects props.title as <string>, props.subtitle as <string>
 const TitleBlock = (props) => {
-  console.log(props)
   //Component -- Title
   const Title = (props) => (<p className="title">{props.text}</p>)
   //Component -- Subtitle
@@ -162,31 +139,29 @@ const Field = (props) => {
   const $fieldQuote = <FieldQuote quotes={props.quotes}/>
   const $fieldContent = props.content
   return (
-    <div className={"field"}>
+    <div className={"field-" + props.title.toLowerCase()}>
       {$fieldTitle}
       {$fieldQuote}
       {$fieldContent}
     </div>
   )
 }
-
+/*
 //Component -- ArticleList
 //Expects prop.articles as an array of objects of type {hyperlink:string title:string}
 const ArticleList = (props) => {
-  //Component -- Article
-  //Expects props.hyperlink, props.title
-  const $articles = props.articles.map((a) => (<li key={a.title}><a className="article-link" href={a.hyperlink}>{a.title}</a></li>))
+  const $articles = props.articles.map((a) => (<Article Key=a.hyperlink hyperlink=a.hyperlink a.title />))
   return (
-    <div className="articles">
-      A Suspicious Lot of Ideas
-      (Essays and Blurbs)
-      <ul>
-        {$articles}
-      </ul>
-    </div>
-  )
-}
-
+    <ul className="articles">
+      <span style="font-size:32px;">A Suspicious Lot of Ideas
+      <span style="font-size:16px;">(Essays and Blurbs)
+      {articles}
+    </ul>
+)}
+//Component -- Article
+//Expects props.hyperlink, props.title
+const Article = (props) => (<li><a className="article-link" hrefs={props.hyperlink}>{props.title}</a></li>)
+*/
 //Component -- RichTextBlock
 const RichTextBlock = (props) => {
   return (<div className="rich-text-block">{props.children}</div>)

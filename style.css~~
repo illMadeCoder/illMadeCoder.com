@@ -118,18 +118,27 @@ body {
   background-image: url(/images/weapon.png);
 }
 .field {
+  display: none;
   width: 60%;
   margin: auto;
-  margin-top: 2.5%;
   color: white;
+  margin-top: 2.5%;
+
+}
+.web-field {
+}
+.self-field {
   font-size: 18px;
+  margin-top: 2.5%;
+}
+.work-field {
+  margin-top: 2.5%;
 }
 .articles {
   border-top: 5px dotted white;
   padding-top: 5%;
-  margin-top: 5%;
+  margin-top: 10%;
   font-size: 20px;
-  margin-bottom: 5%;
 }
 .article-link {
   text-decoration: none;
@@ -145,9 +154,6 @@ body {
   text-align: center;
   margin-bottom: 5%;
   margin-top: 0;
-  padding-bottom: 5%;
-  margin-bottom: 5%;
-  border-bottom: 5px dotted white;
 }
 .rich-text-block {
   color: white;
@@ -155,4 +161,5 @@ body {
   margin: auto;
   letter-spacing: 1px;
   font-size: 110%;
+  margin-bottom: 2%;
 }

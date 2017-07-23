@@ -70,20 +70,24 @@ body {
   border-radius: 1vw;
   cursor: pointer;
 }
-.row {
+.projects {
+  list-style-type: none;
+}
+.project {
+  position: relative;
+  display: block;
+  text-align: center;
   width: 760px;
   height: 152px;
   margin: auto;
   background-size: contain;
-  background-position: left top;
+  background-position: center;
   background-repeat: no-repeat;
-  border: 4px solid white;
+  border: 3px solid white;
   cursor: pointer;
+  margin-bottom: 3%;
 }
-.row-image:hover > .row-text {
-  display: block;
-}
-.row-text {
+.project-title {
   position: absolute;
   background-color: white;
   margin-left: 1%;
@@ -96,6 +100,28 @@ body {
   border: 2px solid black;
   padding-left: 2%;
   padding-right: 2%;
+  display: none;
+}
+.project-description {
+  position: absolute;
+  margin-top: 14%;
+  margin-left: 1%;
+  float: right;
+  background-color: white;
+  font-size: 24px;
+  text-align: center;
+  word-wrap: normal;
+  font-weight: bold;
+  color: black;
+  border: 2px solid black;
+  padding-left: 2%;
+  padding-right: 2%;
+  display: none;
+}
+.project:hover > .project-title {
+  display: block;
+}
+.project:hover > .project-description {
   display: block;
 }
 .fieldtitle {
@@ -129,7 +155,6 @@ body {
   padding-top: 5%;
   margin-top: 5%;
   font-size: 20px;
-  margin-bottom: 5%;
 }
 .article-link {
   text-decoration: none;
@@ -137,7 +162,7 @@ body {
 }
 .view {
   display: block;
-  margin: auto;
+  margin-bottom: 5%;
 }
 .fieldquote {
   color: white;

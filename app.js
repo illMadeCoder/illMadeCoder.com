@@ -1,6 +1,9 @@
 const data = {
   quotes : 
   [
+    '“Now I understand that one of the important reasons for going to college and getting an education is to learn that the things you\'ve believed in all your life aren\'t true, and that nothing is what it appears to be.”  ― Daniel Keyes, Flowers for Algernon',
+    '“I am afraid. Not of life, or death, or nothingness, but of wasting it as if I had never been.”  ― Daniel Keyes, Flowers for Algernon',
+    '“Thank God for books and music and things I can think about.” ― Daniel Keyes, Flowers for Algernon',
     '"The bravest people are the ones who don\'t mind looking like cowards." - T.H. White',
     '"Everything not forbidden is compulsory" - T.H. White',
     '"Only fools want to be great." - T.H. White',
@@ -136,7 +139,7 @@ const Body = (props) => {
     "Self",
     (
       <div>
-        <h2 style={{textAlign:"center"}}> A Bit On Myself </h2>
+        <h2 style={{textAlign:"center"}}> A Bit On Myself <br /> (Some Articles are Below) </h2>
         <RichTextBlock> Welcome Friend - to my sincere but abstract abode! <br /><br />
         
         Here lies the product of my labor, from my public web work and projects, to my inner mind in regards to the art of code and games and self.
